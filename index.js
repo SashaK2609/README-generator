@@ -60,12 +60,18 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+	return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+};
 
 // function to initialize program
 function init() {
+	inquirer.prompt(questions)
+	.then ((response) => {
+			console.log("Congratulations! Your professional README is created!");
+			writeToFile("professional-README.md", generateMarkdown({...response}))
+		})
+	}
 
-}
 
 // function call to initialize program
 init();
