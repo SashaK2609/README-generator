@@ -9,10 +9,10 @@
 * [Description] (#-description)
 * [Installation] (#-installation)
 * [Usage] (#-usage)
-* License
-* Contributing
-* Tests
-* Questions
+* [License] (#-license)
+* [Contributing] (#-contribiting)
+* [Tests] (#-tests)
+* [Questions] (#-questions)
 
 ## Description
 The main purpose of this Project was to create a command-line application that accepts user input using Node.js and npm and generates a README file for the repository. Basically, user will be given a set of questions on the command line and based on the answeres, a README file will be generated. During the learning process we've discovered how to run some code using node command. To build the code fs, path and inquirer npm packages were used. 
