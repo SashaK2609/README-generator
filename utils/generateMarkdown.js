@@ -7,12 +7,12 @@ function renderLicenseBadge(license) {
 };
 
 //function to create a license link
-function renderLicenseLink(license) {
-	if (license !== "none") {
-		return `\n [License](#license)\n`;
-	} else
-	return "";
-};
+// function renderLicenseLink(license) {
+// 	if (license !== "none") {
+// 		return `\n [License](#license)\n`;
+// 	} else
+// 	return "";
+// };
 
 //function that returns license section of README
 function renderLicenseSection(license) {
@@ -27,7 +27,6 @@ function renderLicenseSection(license) {
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-by ${data.name}
 ${renderLicenseBadge(data.license)};
 ## Table of Content
 * [Description](#description)
@@ -37,7 +36,7 @@ ${renderLicenseBadge(data.license)};
 * [Contributing](#contribiting)
 * [Tests](#tests)
 * [Questions](#questions)
-${renderLicenseLink(data.license)};
+////${renderLicenseLink(data.license)};
 ## Description
 ${data.description}
 ## Instalation
