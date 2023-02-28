@@ -68,7 +68,7 @@ function init() {
 	inquirer.prompt(questions)
 	.then ((response) => {
 			console.log("Congratulations! Your professional README is created!");
-			writeToFile("professional-README.md", generateMarkdown({...response}))
+			writeToFile("./Prof-README/professional-README.md", generateMarkdown({...response}))
 		})
 	}
 
